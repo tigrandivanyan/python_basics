@@ -1,6 +1,6 @@
 #loop for inputing and validating numer
 while True:
-    numText = input('Please, enter a number for repetition\n')
+    numText = input('Please, enter a number for calculating sum of digits\n')
     if not numText.isnumeric():
         print("Sorry, your value is not a number")
         continue
