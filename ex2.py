@@ -7,6 +7,13 @@ while True:
         print("Sorry, the length of text should be 3 or more")
     else:
         break
-#swapcasing 3rd character by recreating string
-text = text[:2] + text[2].swapcase() + text[3:]
-print(text)
+
+#swapcasing every 3rd character by recreating string
+res = ''
+for idx, ele in enumerate(text):
+ 
+    if (idx + 1) % 3 == 0 and idx != 0:
+        res = res + ele.swapcase()
+    else:
+        res = res + ele
+print(res)
